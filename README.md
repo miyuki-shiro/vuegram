@@ -1,4 +1,6 @@
-# vuegram
+# Vuegram
+
+A simple social media web app built with Vue.js and Firebase based on the tutorial of 🔥 [Alec Plummer from Savvy](https://savvyapps.com/blog/definitive-guide-building-web-app-vuejs-firebase) 🔥
 
 ## Project setup
 ```
