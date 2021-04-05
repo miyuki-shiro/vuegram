@@ -2,15 +2,16 @@
 import firebase from 'firebase';
 import 'firebase/auth'
 import 'firebase/firestore'
+import env from '../env.js'
 
-// firebase init - add your own config here
+// firebase configuration
 const firebaseConfig = {
-  apiKey: 'AIzaSyBrvCsuD3eoi8KbDQ-axWa8xGRV-jTep4M',
-  authDomain: 'vuegram-23282.firebaseapp.com',
-  projectId: 'vuegram-23282',
-  storageBucket: 'vuegram-23282.appspot.com',
-  messagingSenderId: '1025188190304',
-  appId: '1:1025188190304:web:0e8acbf29533ca8eb14b05'
+  apiKey: env.apiKey,
+  authDomain: env.authDomain,
+  projectId: env.projectId,
+  storageBucket: env.storageBucket,
+  messagingSenderId: env.messagingSenderId,
+  appId: env.appId
 }
 firebase.initializeApp(firebaseConfig)
 
@@ -25,11 +26,4 @@ const commentsCollection = db.collection('comments')
 const likesCollection = db.collection('likes')
 
 // export utils/refs
-export {
-  db,
-  auth,
-  usersCollection,
-  postsCollection,
-  commentsCollection,
-  likesCollection
-}
+export { db, auth, usersCollection, postsCollection, commentsCollection, likesCollection }
